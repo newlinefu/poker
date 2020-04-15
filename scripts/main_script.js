@@ -70,7 +70,7 @@ for(let i = 0; i < allCards.length; i++) {
 function isPropertyFromLastHistory(property, value) {
 	return value === checkPropertyFromLastRecord(property);
 }
-export function checkPropertyFromLastRecord(property) {
+function checkPropertyFromLastRecord(property) {
 	return history[history.length - 1][property];
 }
 function hideAndShow(hidingBlock, showingBlock, onFlex = true) {		

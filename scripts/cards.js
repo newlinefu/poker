@@ -55,5 +55,3 @@ deck.push(new Card('hearts', 'jack', 11, 48));
 deck.push(new Card('hearts', 'queen', 12, 49));
 deck.push(new Card('hearts', 'king', 13, 50));
 deck.push(new Card('hearts', 'ace', 14, 51));
-
-export {deck};
