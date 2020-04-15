@@ -1,4 +1,4 @@
-export class State{
+class State{
 	constructor(classOfOpenWindow, mode, quantityOfPlayers, hand = {}, handOut = {}, activeReplce, distributionCount = 0) {
 		this.classOfOpenWindow = classOfOpenWindow;
 		this.quantityOfPlayers = quantityOfPlayers;
@@ -10,7 +10,7 @@ export class State{
 	}
 }
 
-export class Card {
+class Card {
 	constructor(suit, content, value, indexForSearch) {
 		this.suit = suit;
 		this.content = content;
@@ -19,7 +19,7 @@ export class Card {
 	}
 }
 
-export class MyError extends Error{
+class MyError extends Error{
 	constructor(message) {
 		super(message);
 		this.name = this.constructor.name;

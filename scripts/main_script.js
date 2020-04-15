@@ -1,9 +1,5 @@
 'use strict'
 
-import {deck} from './cards.js';
-import {State, Card, MyError} from './classesJS.js';
-
-
 let testHandOutBut = document.getElementById('test_hand_out'),
 choiceHandOutBtn = document.getElementById('choice_hand_out'),
 choiceQuantityOfPlayers = document.getElementById('choice_quantity_of_players'),

@@ -1,9 +1,5 @@
 'use strict'
 
-import {deck} from './cards.js';
-import {State, Card, MyError} from './classesJS.js';
-import {checkPropertyFromLastRecord} from './main_script.js';
-
 document.getElementById('count_probability').addEventListener('click', () => {
 	document.getElementById('one_pair').value = probabitityOfPair();
 	document.getElementById('three').value = probabilityOfSet();

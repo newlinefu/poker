@@ -1,4 +1,3 @@
-import {Card} from './classesJS.js';
 
 let deck = [];
 deck.push(new Card('cross', '2', 2, 0));
