@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: url('../images/fon.jpg') center;
+	font-family: 'Open Sans', sans-serif;
+}
+.choice{
+	max-width: 40%;
+	margin: 180px auto;
+	display: flex;
+	justify-content: space-around;
+}
+.quantity_of_players{
+	max-width: 40%;
+	margin: 180px auto;
+	display: none;
+}
+.choice > input{
+	width: 250px;
+	border-radius: 6px;
+	outline: none;
+	border: none;
+	line-height: 50px;
+	padding: 25px 0 25px;
+	font-size: 18px;
+	box-shadow: 0 0 5px 0px blue;
+}
+.choice > input:hover{
+	box-shadow: 0 0 10px 5px blue;
+	transition: 0.4s;
+}
+#text_of_quantity_of_players{
+	width: 300px;
+	border-radius: 6px;
+	outline: none;
+	border: none;
+	line-height: 30px;
+	padding: 15px 15px 15px;
+	font-size: 18px;
+	box-shadow: 0 0 2px 0px blue;
+}
+#text_of_quantity_of_players:hover,
+#text_of_quantity_of_players:focus{
+	box-shadow: 0 0 5px 0px blue;
+	transition: 0.3s;
+}
+#choice_quantity_of_players{
+	width: 100px;
+	border-radius: 6px;
+	outline: none;
+	border: none;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 15px 15px 15px;
+	margin-left: 10px;
+}
+#choice_quantity_of_players:hover{
+	box-shadow: 0 0 7px 3px blue;
+	transition: 0.3s;
+}
+.table_of_free_hand_out,
+.table_of_random_hand_out{
+	display: none;
+}
+.part_with_cards{
+	margin: 20px;
+}
+.choice_cards{
+	display: none;
+}
+.other_gamers{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 900px;
+}
+.cards_of_other_gamers{
+	width: 100px;
+}
+.cards_out_of_players{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	margin-top: 30px;
+}
+.hand_out_card{
+	width: 100px;
+	height: 155.5px;
+	border-radius: 6px;
+	border: 3px dashed blue; 
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.deck > img {
+	width: 100px;
+}
+.probability > input,
+.probability > label{
+	display: inline-block;
+}
+.your_cards{
+	width: 600px;
+	text-align: center;
+	margin-top: 40px;
+}
+.your_card{
+	width: 150px;
+	height: 237px;
+	border-radius: 6px;
+	border: 3px dashed blue;
+	margin-left: 50px; 
+	display: inline-block;
+}
+.your_card.busy,
+.hand_out_card.busy{
+	border: none;
+}
+.your_card.busy:hover,
+.hand_out_card.busy:hover{
+	box-shadow: none;
+}
+.your_card.busy > img:hover,
+.hand_out_card.busy > img:hover{
+	box-shadow: 0 0 7px 3px red;
+}
+.part_with_probability{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+.part_with_probability > input[type = "text"] {
+	line-height: 20px;
+	font-size: 16px;
+	padding: 5px 10px 5px;
+	border-radius: 6px;
+	border: none;
+	outline: none;
+	margin-bottom: 5px;
+}
+.part_with_probability > label {
+	font-size: 16px;
+	margin: 4px 0px 3px;
+}
+#count_probability,
+#count_probability_random{
+	border: none;
+	outline: none;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 15px 0 15px 0;
+	margin-top: 20px;
+	border-radius: 6px;
+	box-shadow: 0 0 5px 0px blue;
+}
+#count_probability:hover,
+#count_probability_random:hover{
+	box-shadow: 0 0 7px 3px blue;
+	transition: 0.3s;
+}
+.hand_out_card:hover,
+.your_card:hover{
+	box-shadow: 0 0 7px 3px blue;
+}
+.random >.hand_out_card:hover,
+.random > .your_card:hover{
+	box-shadow: none;
+}
+
+.list_of_all_cards{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+.list_of_all_cards > img{
+	width: 80px;
+	box-shadow: 0 0 5px 0px black;
+	margin: 5px 5px 5px 5px;
+}
+.list_of_all_cards > img:hover{
+	box-shadow: 0 0 8px 4px black;
+}
+.choice_card{
+	text-align: center;
+	margin-top: 20px;
+}
+.choice_card > input{
+	line-height: 20px;
+	padding: 10px 0 10px;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	width: 200px;
+	box-shadow: 0 0 5px 0px blue;
+}
+.choice_card > input:hover{
+	box-shadow: 0 0 7px 4px blue;
+	transition: 0.3s;
+}
+#back{
+	line-height: 20px;
+	padding: 10px 0 10px;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	width: 150px;
+	box-shadow: 0 0 5px 0px blue;
+	position: sticky;
+	bottom: 35px;
+	left: 20px;
+	visibility: hidden;
+}
+#back:hover {
+	box-shadow: 0 0 7px 4px blue;
+	transition: 0.3s;
+}
+
+.list_of_all_cards > img.chosed{
+	box-shadow: 0 0 15px 6px black;
+}
+.list_of_all_cards > img.on_table{
+	opacity: 0.65;
+	box-shadow: none;
+}
+.list_of_all_cards > img.on_table:hover{
+	
+}
+#deck_for_distribution:hover {
+	box-shadow: 0 0 7px 4px blue;
+}

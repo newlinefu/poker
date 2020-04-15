@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main_style.css" type = "text/css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<title>POKER</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<main>
+		<div class="choice" id = "choice_block">
+			<input type = "button" value = "Пробная раздача" id = "test_hand_out">
+			<input type = "button" value = "Выбрать раздачу" id = "choice_hand_out">
+		</div>
+
+		<div class="quantity_of_players" id = "quantity_block">
+			<input type = "number" min = 1 max = 8 placeholder = "Колличество игроков" id = "text_of_quantity_of_players">
+			<input type = "button" value = "Выбрать" id = "choice_quantity_of_players">
+		</div>
+		
+		<div class="table_of_free_hand_out" id = "table_of_free_block">
+			<div class="part_with_probability">
+				<label for="one_pair">Пара:</label>
+				<input type="text" id = "one_pair" disabled>
+				<label for="two_pais">Две пары:</label>
+				<input type="text" id = "two_pais" disabled>
+				<label for="three">Сет:</label>
+				<input type="text" id = "three" disabled>
+				<label for="straight">Стрит:</label>
+				<input type="text" id = "straight" disabled>
+				<label for="flush">Флеш:</label>
+				<input type="text" id = "flush" disabled>
+				<label for="full_house">Фул хаус:</label>
+				<input type="text" id = "full_house" disabled>
+				<label for="four">Каре:</label>
+				<input type="text" id = "four" disabled>
+
+				<input type="button" value = "Посчитать вероятность" id = "count_probability">
+			</div>
+			<div class="part_with_cards">
+				<div class="other_gamers" id = "other_gamers">
+					
+				</div>
+				<div class="cards_out_of_players">
+					<div class="hand_out" id = "hand_out">
+						<div class="hand_out_card" id = "hand_out_card_1"></div>
+						<div class="hand_out_card" id = "hand_out_card_2"></div>
+						<div class="hand_out_card" id = "hand_out_card_3"></div>
+						<div class="hand_out_card" id = "hand_out_card_4"></div>
+						<div class="hand_out_card" id = "hand_out_card_5"></div>
+					</div>
+					<div class="deck">
+						<img src = "images/card.jpg" alt="card">
+					</div>
+				</div>
+				<div class="your_cards" id = "your_cards">
+					<div class="your_card" id = "your_card_1"></div>
+					<div class="your_card" id = "your_card_2"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="table_of_random_hand_out" id = "table_of_random_block">
+			<div class="part_with_probability">
+				<label for="one_pair_random">Пара:</label>
+				<input type="text" id = "one_pair_random" disabled>
+				<label for="two_pais_random">Две пары:</label>
+				<input type="text" id = "two_pais_random" disabled>
+				<label for="three_random">Сет:</label>
+				<input type="text" id = "three_random" disabled>
+				<label for="straight_random">Стрит:</label>
+				<input type="text" id = "straight_random" disabled>
+				<label for="flush_random">Флеш:</label>
+				<input type="text" id = "flush_random" disabled>
+				<label for="full_house_random">Фул хаус:</label>
+				<input type="text" id = "full_house_random" disabled>
+				<label for="four_random">Каре:</label>
+				<input type="text" id = "four_random" disabled>
+
+				<input type="button" value = "Посчитать вероятность" id = "count_probability_random">
+			</div>
+			<div class="part_with_cards">
+				<div class="other_gamers" id = "other_gamers_random">
+					
+				</div>
+				<div class="cards_out_of_players">
+					<div class="hand_out random" id = "hand_out_random">
+						<div class="hand_out_card" id = "hand_out_card_1_random"></div>
+						<div class="hand_out_card" id = "hand_out_card_2_random"></div>
+						<div class="hand_out_card" id = "hand_out_card_3_random"></div>
+						<div class="hand_out_card" id = "hand_out_card_4_random"></div>
+						<div class="hand_out_card" id = "hand_out_card_5_random"></div>
+					</div>
+					<div class="deck">
+						<img src = "images/card.jpg" alt="card" id = "deck_for_distribution">
+					</div>
+				</div>
+				<div class="your_cards random" id = "your_cards_random">
+					<div class="your_card" id = "your_card_1_random"></div>
+					<div class="your_card" id = "your_card_2_random"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="choice_cards" id = "block_with_list_of_cards">
+			<div class="list_of_all_cards">
+				<img src="images/2_cross.jpg" alt="" id = "card_0">
+				<img src="images/3_cross.jpg" alt="" id = "card_1">
+				<img src="images/4_cross.jpg" alt="" id = "card_2">
+				<img src="images/5_cross.jpg" alt="" id = "card_3">
+				<img src="images/6_cross.jpg" alt="" id = "card_4">
+				<img src="images/7_cross.jpg" alt="" id = "card_5">
+				<img src="images/8_cross.jpg" alt="" id = "card_6">
+				<img src="images/9_cross.jpg" alt="" id = "card_7">
+				<img src="images/10_cross.jpg" alt="" id = "card_8">
+				<img src="images/jack_cross.jpg" alt="" id = "card_9">
+				<img src="images/queen_cross.jpg" alt="" id = "card_10">
+				<img src="images/king_cross.jpg" alt="" id = "card_11">
+				<img src="images/ace_cross.jpg" alt="" id = "card_12">
+				<img src="images/2_diamonds.jpg" alt="" id = "card_13">
+				<img src="images/3_diamonds.jpg" alt="" id = "card_14">
+				<img src="images/4_diamonds.jpg" alt="" id = "card_15">
+				<img src="images/5_diamonds.jpg" alt="" id = "card_16">
+				<img src="images/6_diamonds.jpg" alt="" id = "card_17">
+				<img src="images/7_diamonds.jpg" alt="" id = "card_18">
+				<img src="images/8_diamonds.jpg" alt="" id = "card_19">
+				<img src="images/9_diamonds.jpg" alt="" id = "card_20">
+				<img src="images/10_diamonds.jpg" alt="" id = "card_21">
+				<img src="images/jack_diamonds.jpg" alt="" id = "card_22">
+				<img src="images/queen_diamonds.jpg" alt="" id = "card_23">
+				<img src="images/king_diamonds.jpg" alt="" id = "card_24">
+				<img src="images/ace_diamonds.jpg" alt="" id = "card_25">
+				<img src="images/2_peaks.jpg" alt="" id = "card_26">
+				<img src="images/3_peaks.jpg" alt="" id = "card_27">
+				<img src="images/4_peaks.jpg" alt="" id = "card_28">
+				<img src="images/5_peaks.jpg" alt="" id = "card_29">
+				<img src="images/6_peaks.jpg" alt="" id = "card_30">
+				<img src="images/7_peaks.jpg" alt="" id = "card_31">
+				<img src="images/8_peaks.jpg" alt="" id = "card_32">
+				<img src="images/9_peaks.jpg" alt="" id = "card_33">
+				<img src="images/10_peaks.jpg" alt="" id = "card_34">
+				<img src="images/jack_peaks.jpg" alt="" id = "card_35">
+				<img src="images/queen_peaks.jpg" alt="" id = "card_36">
+				<img src="images/king_peaks.jpg" alt="" id = "card_37">
+				<img src="images/ace_peaks.jpg" alt="" id = "card_38">
+				<img src="images/2_hearts.jpg" alt="" id = "card_39">
+				<img src="images/3_hearts.jpg" alt="" id = "card_40">
+				<img src="images/4_hearts.jpg" alt="" id = "card_41">
+				<img src="images/5_hearts.jpg" alt="" id = "card_42">
+				<img src="images/6_hearts.jpg" alt="" id = "card_43">
+				<img src="images/7_hearts.jpg" alt="" id = "card_44">
+				<img src="images/8_hearts.jpg" alt="" id = "card_45">
+				<img src="images/9_hearts.jpg" alt="" id = "card_46">
+				<img src="images/10_hearts.jpg" alt="" id = "card_47">
+				<img src="images/jack_hearts.jpg" alt="" id = "card_48">
+				<img src="images/queen_hearts.jpg" alt="" id = "card_49">
+				<img src="images/king_hearts.jpg" alt="" id = "card_50">
+				<img src="images/ace_hearts.jpg" alt="" id = "card_51">
+			</div>
+			<div class="choice_card">
+				<input type="button" value = "Выбрать" id = "choice_card_from_list">
+			</div>
+		</div>
+		<input type = "button" value = "Назад" id = "back">
+	</main>
+	<script type = "module" src = "scripts/main_script.js"></script>
+	<script type = "module" src = "scripts/probability.js"></script>
+</body>
+</html>
